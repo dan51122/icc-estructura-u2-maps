@@ -1,4 +1,5 @@
 # Non-Linear Data Structures 
+![alt text](image.png)
 
 ## Getting Started
 

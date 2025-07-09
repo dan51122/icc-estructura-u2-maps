@@ -21,6 +21,13 @@ public class App {
 
     private static void runMapExamlpe() {
         Mapa mapa = new Mapa();
+        mapa.runHashMap();
+        mapa.runLinkedHashMap();
+        mapa.runTreeMap();
+        mapa.runHashMapObj();
+        System.out.println("");
+        mapa.runTreeMapObj();
+
     }
 
     private static void runEmpleadoExample() {
