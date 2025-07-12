@@ -48,7 +48,7 @@ public class App {
         empleadoContollerHash.list();
         empleadoContollerTree.list();
 
-
+        runEjerccios();
     }
 
     private static void runMapExamlpe() {
@@ -67,7 +67,36 @@ public class App {
     }
 
     private static void runEjerccios() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        System.out.println("\n--- Ejercicios ---");
+        Ejercicios ej = new Ejercicios();
 
+        System.out.println("Ejercicio 1: Anagramas");
+        System.out.println("listen & silent son anagramas? " + Ejercicios.areAnagrams("listen", "silent"));
+        System.out.println("hello & bello son anagramas? " + Ejercicios.areAnagrams("hello", "bello"));
+        System.out.println("triangle & integral son anagramas? " + Ejercicios.areAnagrams("triangle", "integral"));
+
+        System.out.println("\nEjercicio 2: Sumatoria de dos");
+        System.out.println("[ 9, 2, 3, 6 ] objetivo 5");
+        int[] resultado = ej.sumatoriaDeDos(new int[] { 9, 2, 3, 6 }, 5);
+        if (resultado != null) {
+            System.out.println("Índices: [" + resultado[0] + "," + resultado[1] + "]");
+        } else {
+            System.out.println("No se encontró solución.");
+        }
+
+        System.out.println("[ 9, 2, 3, 6 ] objetivo 10");
+        resultado = ej.sumatoriaDeDos(new int[] { 9, 2, 3, 6 }, 10);
+        if (resultado != null) {
+            System.out.println("Índices: [" + resultado[0] + "," + resultado[1] + "]");
+        } else {
+            System.out.println(resultado);
+        }
+
+        System.out.println("\nEjercicio 3: Contar caracteres");
+        System.out.println("palabra: hola");
+        ej.contarCaracteres("hola");
+
+        System.out.println("\nEjercicio 4: Son anagramas");
+        System.out.println("roma & amor son anagramas? " + ej.sonAnagramas("roma", "amor"));
     }   
 }
